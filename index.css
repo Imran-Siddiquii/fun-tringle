@@ -1,0 +1,70 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+ body{
+    background-color: rgb(231, 231, 229);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ main{
+    width: 60vw;
+    margin: 20px auto;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 3px lightgray;
+    padding-bottom: 20px;
+ }
+ ul{
+    /* display: block; */
+    margin: 10px auto;
+    width: fit-content;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 5px auto;
+ }
+ 
+ li{
+    display: inline-block;
+    margin: 10px auto;
+    margin: 20px 25px;
+ }
+ li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header h2{
+    margin: 15px auto;
+}
+main label{
+    /* display: block; */
+    margin:5px auto;
+}
+main input {
+    position: relative;
+    width: 25vw;
+    margin: 15px auto;
+    height: 22px;
+    padding: 5px;
+}
+ #is-triangle{
+    border: none;
+    padding: 10px 18px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+ }
+ .output{
+    font-size: 20px;
+    /* display: inline-block; */
+    margin: 15px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px;
+    border-radius:5px ;
+ }

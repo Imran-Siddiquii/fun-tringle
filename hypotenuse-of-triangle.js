@@ -1,7 +1,7 @@
 const inputSide=document.querySelectorAll(".input-value");
 const resultBtn=document.querySelector('.result');
 const output=document.querySelector('.output');
-
+output.style.display="none"
 function calculateValue(a,b) {
     const resultOfSquare= a**2 + b**2;
     // console.log(resultOfSquare);
@@ -10,6 +10,7 @@ function calculateValue(a,b) {
 }
 
 function calculateHypo() {
+    output.style.display="inline-block"
     if(inputSide[0].value <= 0){
         console.log(typeof inputSide[0].value); //testing
     output.innerText=`Angle one should not be empty and greater then zero`

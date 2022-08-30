@@ -1,15 +1,17 @@
 const inputValue = document.querySelectorAll('.angle1');
 const checkTriangle = document.querySelector("#is-triangle");
 const output = document.querySelector(".output");
-
+   output.style.display='none';
 function calculateTriangle(input1, input2, input3) {
+    
     const addedValue = input1 + input2 + input3;
     console.log(addedValue);// testting
-
-    return addedValue
+    
+    return addedValue;
 }
 
 function isTriangle() {
+    output.style.display='inline-block';
     var input1 = Number(inputValue[0].value)
     var input2 = Number(inputValue[1].value)
     var input3 = Number(inputValue[2].value)
@@ -17,12 +19,12 @@ function isTriangle() {
     //  console.log(typeof input1 + typeof input2 + typeof input3);
     if (input1 <= 0) {
         // console.log("value should be positive1") test
-        output.innerText = "Angle one value should be positive and greater then zero"
+        output.innerText = "Angle one value should be positive and greater than zero"
     } else if (input2 <= 0) {
-        output.innerText = "Angle two value should be positive and greater then zero"
+        output.innerText = "Angle two value should be positive and greater than zero"
 
     } else if (input3 <= 0) {
-        output.innerText = "Angle three value should be positive and greater then zero"
+        output.innerText = "Angle three value should be positive and greater than zero"
 
     }
     else {
@@ -32,7 +34,7 @@ function isTriangle() {
             console.log("this is a triangle")
         }
         else {
-            output.innerText = "this is not a triangle " + sumOfNumber
+            output.innerText = "This is not a triangle " + sumOfNumber
 
         }
     }
